@@ -46,10 +46,18 @@
 
 .page-nav ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0;
 }
 
-.page-nav ul li a {
+.page-nav ul ul {
+    padding-left: 20px;
+}
+
+.page-nav li {
+    margin-bottom: 5px;
+}
+
+.page-nav a {
     text-decoration: none;
     color: #007bff;
 }
