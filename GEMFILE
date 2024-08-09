@@ -1,0 +1,4 @@
+source "https://rubygems.org"
+
+gem "jekyll"
+gem "jekyll-toc" # Add any other plugins you're using
