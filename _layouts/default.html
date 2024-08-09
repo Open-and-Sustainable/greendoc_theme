@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="{{ site.title }} logo" style="height: 50px;">
+            <div class="header-text">
+                <h1>{{ site.title }}</h1>
+                <p>{{ site.description }}</p>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="{{ site.baseurl }}/">Home</a></li>
+                <li><a href="{{ site.baseurl }}/main-section">Main Section</a></li>
+                <li><a href="{{ site.github_repo }}" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content-container">
+        <aside class="sidebar">
+            <nav class="page-nav">
+                <!-- In-page navigation goes here -->
+                {% include toc.html %}
+            </nav>
+        </aside>
+        <main class="content">
+            {{ content }}
+        </main>
+    </div>
