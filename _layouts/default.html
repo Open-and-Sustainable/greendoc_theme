@@ -44,10 +44,12 @@
 
     <div class="content-wrapper">
         <aside class="toc-sidebar">
-            <!-- Manually trigger the TOC generation -->
             <nav>
-                * TOC
-                {:toc}
+                <ul>
+                    {% for heading in page.content | markdownify | extract_headings %}
+                        <li><a href="#{{ heading.id }}">{{ heading.text }}</a></li>
+                    {% endfor %}
+                </ul>
             </nav>
         </aside>
         <main class="page-content">
