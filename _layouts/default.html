@@ -44,19 +44,9 @@
 
     <div class="content-wrapper">
         <aside class="toc-sidebar">
+            <!-- Include the TOC -->
             <nav>
-                <ul>
-                    {% assign toc_headers = page.content | markdownify | split: '<h2' %}
-                    {% for toc_header in toc_headers %}
-                        {% if toc_header contains 'id="' %}
-                            <li>
-                                <a href="#{{ toc_header | split: 'id="' | last | split: '"' | first }}">
-                                    {{ toc_header | split: '>' | last | split: '</h2>' | first }}
-                                </a>
-                            </li>
-                        {% endif %}
-                    {% endfor %}
-                </ul>
+                {% include toc.html html=content %}
             </nav>
         </aside>
         <main class="page-content">
