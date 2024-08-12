@@ -12,9 +12,6 @@ nav_links:
   - name: "Customization"
     url: "/customization.html"
 
-plugins:
-  - jekyll-toc
-
 
 #logo: "/assets/images/custom-logo.png"
 #favicon: "/assets/images/custom-favicon.ico"
