@@ -46,8 +46,15 @@
         <aside class="toc-sidebar">
             <nav>
                 <ul>
-                    {% for heading in page.content | markdownify | extract_headings %}
-                        <li><a href="#{{ heading.id }}">{{ heading.text }}</a></li>
+                    {% assign toc_headers = page.content | markdownify | split: '<h2' %}
+                    {% for toc_header in toc_headers %}
+                        {% if toc_header contains 'id="' %}
+                            <li>
+                                <a href="#{{ toc_header | split: 'id="' | last | split: '"' | first }}">
+                                    {{ toc_header | split: '>' | last | split: '</h2>' | first }}
+                                </a>
+                            </li>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </nav>
