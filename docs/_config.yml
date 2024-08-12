@@ -2,7 +2,7 @@ title: "GreenDoc Theme"
 description: "Documentation for the Open and Sustainable Documentation Theme"
 baseurl: "/greendoc_theme"
 url: "https://open-and-sustainable.github.io"
-github_repo: "https://github.com/yourusername/your-repo-name"
+github_repo: "https://github.com/Open-and-Sustainable/greendoc_theme"
 logo: "/assets/images/logo.png"
 favicon: "/assets/images/favicon.ico"
 #theme: greendoc_theme
