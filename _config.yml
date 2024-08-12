@@ -1,15 +1,6 @@
 logo: "/assets/images/logo.png"
 favicon: "/assets/images/favicon.ico"
 
-plugins:
-  - jekyll-toc
-
-toc:
-  min_level: 2
-  max_level: 3
-  no_toc_section_class: 'no_toc'
-  list_type: 'ul'
-
 markdown: kramdown
 kramdown:
   input: GFM  # GitHub Flavored Markdown (optional)
