@@ -1,0 +1,20 @@
+logo: "/assets/images/logo.png"
+favicon: "/assets/images/favicon.ico"
+
+plugins:
+  - jekyll-toc
+
+toc_title: "Table of Contents"
+toc:
+  min_level: 2
+  max_level: 3
+  no_toc_section_class: 'no_toc'
+  list_type: 'ul'
+
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown (optional)
+  syntax_highlighter: rouge  # Specifies Rouge for syntax highlighting
+  syntax_highlighter_opts:
+    css_class: 'highlight'  # Adds a CSS class for the highlighted code
+    guess_lang: false  # Prevents guessing the language if it's not specified

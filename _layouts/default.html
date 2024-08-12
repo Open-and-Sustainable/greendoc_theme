@@ -4,34 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <!-- Favicon -->
+    <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
+    <style>
+        :root {
+            --nav-background-color: {{ site.nav_background_color | default: '#4CAF50' }};
+            --nav-hover-color: {{ site.nav_hover_color | default: '#45a049' }};
+            --nav-link-color: {{ site.nav_link_color | default: '#ffffff' }};
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="{{ site.baseurl }}/assets/images/logo.png" alt="{{ site.title }} logo" style="height: 50px;">
-            <div class="header-text">
-                <h1>{{ site.title }}</h1>
-                <p>{{ site.description }}</p>
-            </div>
+            <img src="{{ site.logo | relative_url }}" alt="Logo" class="site-logo">
+            <h1 class="site-title">{{ site.title }}</h1>
         </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="{{ site.baseurl }}/">Home</a></li>
-                <li><a href="{{ site.baseurl }}/main-section">Main Section</a></li>
-                <li><a href="{{ site.github_repo }}" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
     </header>
-    <div class="content-container">
-        <aside class="sidebar">
-            <nav class="page-nav">
-                <!-- In-page navigation goes here -->
-                {% include toc.html %}
+    
+    <nav class="main-nav">
+        <ul>
+            <!-- Home link on the extreme left -->
+            <li class="left"><a href="{{ '/' | relative_url }}">Home</a></li>
+    
+            <!-- Centered links -->
+            <li class="center">
+                {% for link in site.nav_links %}
+                    <a href="{{ link.url | relative_url }}">{{ link.name }}</a>
+                {% endfor %}
+            </li>
+    
+            <!-- GitHub Repo on the extreme right -->
+            <li class="right"><a href="{{ site.github_repo }}">GitHub Repository</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-wrapper">
+        <aside class="toc-sidebar">
+            <!-- Generate the TOC -->
+            <nav>
+                {{ content | toc_only }}
             </nav>
         </aside>
-        <main class="content">
+        <main class="page-content">
             {{ content }}
         </main>
     </div>
-    
+
+    <footer>
+        <p>&copy; {{ site.time | date: "%Y" }} Riccardo Boero. Distributed by an <a href="https://github.com/Open-and-Sustainable/greendoc_theme/tree/main/LICENSE">MIT license</a>.</p>
+    </footer>    
+</body>
+</html>

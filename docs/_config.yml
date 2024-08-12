@@ -2,5 +2,22 @@ title: "GreenDoc Theme"
 description: "Documentation for the Open and Sustainable Documentation Theme"
 baseurl: "/greendoc_theme" # Adjust if you're hosting on GitHub Pages
 url: "https://open-and-sustainable.github.io"
-#theme: greendoc_theme
-remote_theme: Open-and-Sustainable/greendoc_theme
+theme: greendoc_theme
+#remote_theme: Open-and-Sustainable/greendoc_theme
+nav_links:
+  - name: "Usage"
+    url: "/usage.html"
+  - name: "Customization"
+    url: "/customization.html"
+
+plugins:
+  - jekyll-toc
+
+
+#logo: "/assets/images/custom-logo.png"
+#favicon: "/assets/images/custom-favicon.ico"
+# Customizable Nav Bar Colors
+#nav_background_color: "#007BFF" # Override nav bar color (blue)
+#nav_hover_color: "#0056b3"      # Override hover color (darker blue)
+#nav_link_color: "#ffffff"       # Override link text color (white)
+
