@@ -44,9 +44,10 @@
 
     <div class="content-wrapper">
         <aside class="toc-sidebar">
-            <!-- Generate the TOC -->
+            <!-- Manually trigger the TOC generation -->
             <nav>
-                {{ content | toc_only }}
+                * TOC
+                {:toc}
             </nav>
         </aside>
         <main class="page-content">
