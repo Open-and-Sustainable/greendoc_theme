@@ -53,7 +53,6 @@ The GreenDoc Theme allows you to easily customize the site's colors and fonts to
 ```
 2. **Modify these variables** to match your desired color scheme. For example:
 ```css
-
     :root {
         --primary-color: #ff5722; /* Change primary color */
         --nav-background-color: #333333; /* Darken navigation bar */
