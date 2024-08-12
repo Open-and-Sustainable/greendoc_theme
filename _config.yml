@@ -5,8 +5,10 @@ plugins:
   - jekyll-toc
 
 toc:
-  h_min: 2
-  h_max: 3
+  min_level: 2
+  max_level: 3
+  no_toc_section_class: 'no_toc'
+  list_type: 'ul'
 
 markdown: kramdown
 kramdown:
