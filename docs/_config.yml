@@ -14,7 +14,7 @@ nav_links:
 
 plugins:
   - jekyll-toc
-toc_title: "Table of Contents"
+
 toc:
   min_level: 2
   max_level: 3
