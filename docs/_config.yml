@@ -1,6 +1,8 @@
 title: "GreenDoc Theme"
 description: "Documentation for the Open and Sustainable Documentation Theme"
 baseurl: "/greendoc_theme" # Adjust if you're hosting on GitHub Pages
+logo: "{{ '/assets/images/logo.png' | relative_url }}"
+favicon: "{{ '/assets/images/favicon.ico' | relative_url }}"
 url: "https://open-and-sustainable.github.io"
 #theme: greendoc_theme
 remote_theme: Open-and-Sustainable/greendoc_theme
