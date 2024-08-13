@@ -1,7 +1,6 @@
 ---
 title: Customization
 layout: default
-toc: true
 ---
 
 # Customizing the GreenDoc Theme

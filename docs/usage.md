@@ -1,7 +1,6 @@
 ---
 title: Usage Guide
 layout: default
-toc: true
 ---
 
 # Usage Guide for GreenDoc Theme
