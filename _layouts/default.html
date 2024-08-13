@@ -7,7 +7,15 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    {% include toc-custom.css %}
+    <style>
+    :root {
+        --toc-hover-color: {{ site.toc_hover_color }};
+    }
+
+    .toc-sidebar nav ul li a:hover {
+        color: var(--toc-hover-color);
+    }
+    </style>
     <!-- Favicon -->
     <link rel="icon" href="{{ site.favicon | relative_url }}" type="image/x-icon">
     <style>

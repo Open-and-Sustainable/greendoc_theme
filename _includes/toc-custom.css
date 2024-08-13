@@ -1,7 +1,0 @@
-:root {
-    --toc-hover-color: {{ site.toc_hover_color }};
-}
-
-.toc-sidebar nav ul li a:hover {
-    color: var(--toc-hover-color);
-}
