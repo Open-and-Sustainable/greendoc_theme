@@ -2,6 +2,7 @@
     --nav-background-color: #4CAF50; /* Default nav bar color */
     --nav-hover-color: #45a049;      /* Default hover color */
     --nav-link-color: #ffffff;       /* Default link color */
+    --toc-hover-color: #4CAF50;      /* Default hover color for TOC*/
 }
 
 /* Global reset, except for headers that need specific margins */
@@ -140,7 +141,7 @@ h3 {
 }
 
 .toc-sidebar nav ul li a:hover {
-    color: #4CAF50;
+    color: var(--toc-hover-color);
 }
 
 /* Define global link styles */
