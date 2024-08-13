@@ -1,7 +1,7 @@
 # GreenDoc Theme
 This project contains the Open and Sustainable Documentation Theme for Jekyll.
 
-It can be used by referencing the theme in the `_config.yml` file:
+It can be used for GitHub Pages by referencing the theme in the `_config.yml` file:
 ```
 remote_theme: Open-and-Sustainable/greendoc_theme
 ```
