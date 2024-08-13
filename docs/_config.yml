@@ -14,8 +14,8 @@ nav_links:
     url: "/customization.html"
 
 
-#logo: "/assets/images/custom-logo.png"
-#favicon: "/assets/images/custom-favicon.ico"
+#logo: "assets/images/custom-logo.png"
+#favicon: "assets/images/custom-favicon.ico"
 # Customizable Nav Bar Colors
 #nav_background_color: "#007BFF" # Override nav bar color (blue)
 #nav_hover_color: "#0056b3"      # Override hover color (darker blue)
