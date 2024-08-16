@@ -213,6 +213,10 @@ pre.highlight {
 .highlight .c { color: #999999; }  /* Comments (not shown in your example, but often used) */
 .highlight .p { color: #ffffff; }  /* Punctuation (e.g., periods, commas) */
 
+.table-spacing td, .table-spacing th {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 /* Ensure responsive behavior */
 @media (max-width: 768px) {
