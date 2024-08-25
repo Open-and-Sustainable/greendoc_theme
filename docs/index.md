@@ -12,3 +12,6 @@ This is the documentation for Open and Sustainable Documentation Theme. Below yo
 
 ## How to customize the theme
 - [Customization](customization)
+
+## Examples of theme use
+- [Examples](example)

@@ -3,6 +3,9 @@
     --nav-hover-color: #45a049;      /* Default hover color */
     --nav-link-color: #ffffff;       /* Default link color */
     --toc-hover-color: #4CAF50;      /* Default hover color for TOC*/
+    --table-header-background: var(--nav-background-color); /* Table header background */
+    --table-hover-background: var(--toc-hover-color);       /* Table row hover background */
+    --table-border-color: #ddd;                             /* Table border color */
 }
 
 /* Global reset, except for headers that need specific margins */
@@ -213,9 +216,35 @@ pre.highlight {
 .highlight .c { color: #999999; }  /* Comments (not shown in your example, but often used) */
 .highlight .p { color: #ffffff; }  /* Punctuation (e.g., periods, commas) */
 
+/* Main table styling */
+.table-spacing {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Adding spacing inside the table cells */
 .table-spacing td, .table-spacing th {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Adding borders to create a grid effect */
+.table-spacing, .table-spacing th, .table-spacing td {
+    border: 1px solid var(--table-border-color);
+}
+
+/* Table header styling using root color variable */
+.table-spacing th {
+    background-color: var(--table-header-background);
+    color: var(--nav-link-color);
+    text-align: left;
+}
+
+/* Adding hover effect for better user experience */
+.table-spacing tr:hover {
+    background-color: var(--table-hover-background);
 }
 
 /* Ensure responsive behavior */
