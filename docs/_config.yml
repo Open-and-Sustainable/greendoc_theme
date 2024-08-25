@@ -12,6 +12,8 @@ nav_links:
     url: "/usage.html"
   - name: "Customization"
     url: "/customization.html"
+  - name: "Examples"
+    url: "/example.html"
 
 
 #logo: "assets/images/custom-logo.png"
